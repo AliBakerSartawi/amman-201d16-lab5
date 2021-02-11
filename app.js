@@ -50,9 +50,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) {
-  let sum = a + b + c;
-  let multiply = a * b * c;
-  return [sum, multiply, a + ' and ' + b + ' and ' + c + ' sum to ' + sum + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiply + '.'];
+  // let sum = a + b + c;
+  // mySum= sum(a, sum(b, c)[0])[0];
+  // let multiply = a * b * c;
+  return [sum(a, sum(b, c)[0])[0], multiply(a, multiply(b, c)[0])[0], a + ' and ' + b + ' and ' + c + ' sum to ' + sum(a, sum(b, c)[0])[0] + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiply(a, multiply(b, c)[0])[0] + '.'];
 }
 console.log(sumAndMultiply(4, 7, 5));
 
